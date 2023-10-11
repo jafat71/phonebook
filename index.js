@@ -1,8 +1,10 @@
+require('dotenv').config()
 const express = require('express')
 const fs = require('fs')
 const app = express()
 const morgan = require('morgan')
 var path = require('path')
+
 //middlewares
 app.use(express.json())
 
@@ -21,7 +23,7 @@ const cors = require('cors')
 app.use(cors())
 
 let persons = require('./personsDB.js')
-port = 3001
+port = process.env.PORT || 3001
 
 app.get('/', (req, res) => {
 
