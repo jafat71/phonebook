@@ -214,3 +214,80 @@ GET /json/version 404 151 - 0.718 ms {}
 GET /json 404 143 - 0.642 ms {}
 GET /json/version 404 151 - 0.577 ms {}
 GET /json 404 143 - 0.464 ms {}
+GET /api/notes 404 148 - 4.789 ms {}
+GET / 200 452 - 4.072 ms {}
+GET /assets/index-31c6fc43.css 200 210 - 1.519 ms {}
+GET /assets/index-31db45bf.js 200 175878 - 4.917 ms {}
+GET /api/persons 304 - - 6.489 ms {}
+GET / 304 - - 6.970 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.960 ms {}
+GET /assets/index-31c6fc43.css 304 - - 2.254 ms {}
+GET /api/persons 500 1295 - 5.559 ms {}
+GET /vite.svg 200 1497 - 4.331 ms {}
+GET / 304 - - 0.639 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.568 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.332 ms {}
+GET /api/persons 500 1295 - 1.238 ms {}
+GET /vite.svg 304 - - 0.740 ms {}
+GET /info 500 1395 - 1.358 ms {}
+GET /info 500 1395 - 0.656 ms {}
+GET /info 200 105 - 105.030 ms {}
+GET /info 200 97 - 1286.794 ms {}
+GET /info 200 97 - 112.930 ms {}
+GET / 304 - - 5.175 ms {}
+GET /assets/index-31db45bf.js 304 - - 14.043 ms {}
+GET /assets/index-31c6fc43.css 304 - - 13.440 ms {}
+GET /vite.svg 304 - - 0.737 ms {}
+GET /api/persons 200 262 - 113.701 ms {}
+GET /api/persons 304 - - 101.946 ms {}
+GET /api/persons 200 235 - 110.872 ms {}
+GET / 304 - - 1.714 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.492 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.325 ms {}
+GET /vite.svg 304 - - 0.554 ms {}
+GET /api/persons 304 - - 100.474 ms {}
+GET /api/persons/6528f30dcdf2e4476dfa9133 200 75 - 113.138 ms {"content":"CSS is Easy","important":false}
+GET /api/persons/6528f30dcdf2e4476dfa9132 200 70 - 97.970 ms {"content":"CSS is Easy","important":false}
+GET /api/persons/6528f30dcdf2e4476dfa9133 200 75 - 99.837 ms {"content":"CSS is Easy","important":false}
+DELETE /api/persons/6528f30dcdf2e4476dfa9133 204 - - 2.732 ms {"content":"CSS is Easy","important":false}
+GET /api/persons 200 159 - 109.310 ms {}
+GET /api/persons 200 159 - 120.542 ms {"name":"Arto Hellas","number":"040-123456"}
+POST /api/persons 500 1440 - 3.315 ms {"name":"Arto Hellas","number":"040-123456"}
+POST /api/persons 500 1377 - 19.388 ms {"name":"Arto Hellas","number":"040-123456"}
+POST /api/persons 500 1377 - 19.718 ms {"name":"Arto Hellas","number":"040-123456"}
+POST /api/persons 200 80 - 10.690 ms {"name":"Ada Lovelace","number":"39-44-5323523"}
+POST /api/persons 200 80 - 8.327 ms {"name":"Ada Lovelace","number":"39-44-5323523"}
+POST /api/persons 200 80 - 10.956 ms {"name":"Ada Lovelace","number":"39-44-5323523"}
+POST /api/persons 200 80 - 10.740 ms {"name":"Ada Lovelace","number":"39-44-5323523"}
+POST /api/persons 200 80 - 10.380 ms {"name":"Ada Lovelace","number":"39-44-5323523"}
+POST /api/persons 200 71 - 109.939 ms {"name":"Ada Lovelace","number":"39-44-5323523"}
+POST /api/persons 400 46 - 0.571 ms {"name":"","number":"39-44-5323523"}
+GET / 304 - - 4.304 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.510 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.271 ms {}
+GET /vite.svg 304 - - 0.569 ms {}
+GET /api/persons 200 398 - 115.546 ms {}
+DELETE /api/persons/652b90209fe97586e2d16db6 204 - - 3.545 ms {}
+GET / 304 - - 0.893 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.981 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.509 ms {}
+GET /vite.svg 304 - - 0.471 ms {}
+GET /api/persons 200 317 - 100.086 ms {}
+POST /api/persons 200 78 - 100.585 ms {"name":"Israel Matute","number":"7527532753","id":0}
+PUT /api/persons/6528f6a97124f0d1264ef743 200 75 - 115.386 ms {"number":"8273442"}
+PUT /api/persons/6528f6a97124f0d1264ef743 200 71 - 113.324 ms {"number":"827344as2"}
+PUT /api/persons/6528f6a97124f0d1264ef743 200 29 - 219.331 ms {"number":"8273442"}
+PUT /api/persons/6528f6a97124f0d1264ef743 200 72 - 219.017 ms {"number":"82734122"}
+GET / 304 - - 2.430 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.705 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.404 ms {}
+GET /vite.svg 304 - - 0.549 ms {}
+GET /api/persons 200 393 - 103.538 ms {}
+POST /api/persons 200 70 - 98.774 ms {"name":"Arturito","number":"2132141","id":0}
+GET /assets/index-31c6fc43.css 304 - - 0.720 ms {}
+DELETE /api/persons/652b974eddcb97bfe700ee92 204 - - 0.665 ms {}
+POST /api/persons 200 76 - 97.768 ms {"name":"Artur Conan ","number":"213142342","id":0}
+POST /api/persons 200 74 - 100.269 ms {"name":"Artur Conan","number":"21412523","id":1}
+PUT /api/persons/652b910e9471f646679b818c 200 73 - 207.354 ms {"name":"Israel Matute","number":"34324","id":2}
+PUT /api/persons/652b9784ddcb97bfe700ee99 200 79 - 198.880 ms {"name":"Artur Conan","number":"3423423252777","id":2}
+DELETE /api/persons/652b976bddcb97bfe700ee96 204 - - 0.701 ms {}
