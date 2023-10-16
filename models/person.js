@@ -10,8 +10,16 @@ mongoose.connect(url).catch(error => {
 })
 
 const personSchema = new mongoose.Schema({
-    name: String,
-    number: String
+    name: {
+        type: String,
+        minLength: 3,
+        required: true
+    },
+    number: {
+        type: String,
+        minLength: 9,
+        required: true
+    },
 })
 
 const Person = mongoose.model('Person', personSchema)

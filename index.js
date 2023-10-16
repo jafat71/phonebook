@@ -25,6 +25,22 @@ app.use(express.static('dist'))
 
 port = process.env.PORT || 3001
 
+
+const errorHandler = (error, request, response, next) => {
+    console.error("Error en errorHandler:", error);
+    console.error(error.message)
+
+    if (error.name === 'CastError') {
+        return response.status(400).send({ error: 'malformatted id' })
+    }
+
+    if (error.name === 'ValidationError') {
+        return response.status(400).json({ error: error.message })
+    }
+
+    next()
+}
+
 app.get('/', (req, res) => {
     res.send('PERSONS API')
 })
@@ -48,8 +64,6 @@ app.get('/info', (req, res) => {
                 error
             })
         })
-
-
 
 })
 
@@ -77,23 +91,25 @@ app.delete('/api/persons/:id', (req, res, next) => {
         .catch(error => next(error))
 })
 
+
 app.post('/api/persons', (req, res, next) => {
+
     reqBody = JSON.stringify(req.body)
 
     let { name, number } = req.body
 
     if (name === '' || number === '') {
-        return res.status(400).send({
-            msg: "Error: The name or number is missing"
-        })
+        const error = new Error("The name or number is missing");
+        error.name = "ValidationError";
+        return next(error);
     }
 
     Person.findOne({ name: name })
         .then((person) => {
             if (person) {
-                return res.send({
-                    msg: "Error: The name already exists in the phonebook: " + person.name
-                })
+                const error = new Error("The name already exists in the phonebook: " + person.name);
+                error.name = "ValidationError";
+                return next(error);
             } else {
                 const person = new Person({
                     name: name,
@@ -101,12 +117,15 @@ app.post('/api/persons', (req, res, next) => {
                 })
 
                 person.save()
-                    .then(res.send(person))
-                    .catch(error => console.log("Error saving new Person: " + error))
+                    .then(() => {
+                        res.send(person);
+                    })
+                    .catch(error => next(error));
             }
         })
         .catch(error => next(error))
 })
+
 
 app.put('/api/persons/:id', (req, res, next) => {
     let id = req.params.id
@@ -121,7 +140,7 @@ app.put('/api/persons/:id', (req, res, next) => {
             person.number = number
             person.save()
                 .then(() => res.send(person))
-                .catch(error => console.log("Error updating person info: " + error))
+                .catch(error => next(error))
         })
         .catch(error => next(error))
 })
@@ -131,18 +150,6 @@ const unknownEndpoint = (request, response) => {
 }
 
 app.use(unknownEndpoint)
-
-const errorHandler = (error, request, response, next) => {
-    console.error(error.message)
-
-    if (error.name === 'CastError') {
-        return response.status(400).send({ error: 'malformatted id' })
-    }
-
-    response.status(500).send({ error: 'Something went wrong' });
-
-}
-
 app.use(errorHandler)
 
 app.listen(port, () => {

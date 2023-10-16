@@ -340,3 +340,289 @@ GET /vite.svg 304 - - 0.887 ms {}
 GET /api/persons 200 474 - 101.933 ms {}
 PUT /api/persons/652cc8b5bed57c4769800f5d 200 75 - 211.057 ms {"name":"Israel Matute","number":"1111111","id":0}
 PUT /api/persons/6528f6a97124f0d1264ef743 200 72 - 200.087 ms {"name":"Karl Marx","number":"22222222","id":0}
+GET / 304 - - 4.352 ms {}
+GET /assets/index-31db45bf.js 304 - - 2.098 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.525 ms {}
+GET /vite.svg 304 - - 0.657 ms {}
+GET / 304 - - 0.603 ms {}
+GET /api/persons - - - - ms {}
+GET /assets/index-31db45bf.js 304 - - 1.382 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.354 ms {}
+GET /vite.svg 304 - - 0.584 ms {}
+GET /api/persons 200 548 - 101.449 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 114 - 105.633 ms {"name":"Israel Matute","number":"44","id":0}
+GET /assets/index-31c6fc43.css 304 - - 1.012 ms {}
+GET / 304 - - 4.440 ms {}
+GET /assets/index-31db45bf.js 304 - - 2.010 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.775 ms {}
+GET /vite.svg 304 - - 0.707 ms {}
+GET /api/persons 304 - - 108.489 ms {}
+GET / 304 - - 0.666 ms {}
+GET /assets/index-31db45bf.js 304 - - 0.929 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.652 ms {}
+GET /vite.svg 304 - - 0.533 ms {}
+GET /api/persons 304 - - 102.763 ms {}
+GET / 304 - - 0.918 ms {}
+GET /assets/index-31db45bf.js 304 - - 0.859 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.204 ms {}
+GET /vite.svg 304 - - 0.571 ms {}
+GET /api/persons 304 - - 107.855 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 114 - 110.507 ms {"name":"Israel Matute","number":"11","id":0}
+GET /assets/index-31c6fc43.css 304 - - 0.701 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 114 - 99.089 ms {"name":"Israel Matute","number":"11","id":0}
+POST /api/persons 200 78 - 99.242 ms {"name":"Israel Matute Moncada","number":"11","id":0}
+POST /api/persons 200 71 - 97.500 ms {"name":"Israel Matutex","number":"13","id":1}
+GET / 304 - - 0.458 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.078 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.087 ms {}
+GET /vite.svg 304 - - 0.526 ms {}
+GET /api/persons 200 548 - 99.890 ms {}
+POST /api/persons 200 64 - 100.234 ms {"name":"xd","number":"1231313","id":0}
+GET /assets/index-31c6fc43.css 304 - - 0.604 ms {}
+GET / 304 - - 0.451 ms {}
+GET /assets/index-31db45bf.js 304 - - 0.667 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.409 ms {}
+GET /vite.svg 304 - - 0.501 ms {}
+GET /api/persons 200 548 - 101.656 ms {}
+GET / 304 - - 0.462 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.404 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.586 ms {}
+GET /vite.svg 304 - - 0.412 ms {}
+GET /api/persons 304 - - 98.209 ms {}
+GET / 304 - - 0.453 ms {}
+GET /assets/index-31db45bf.js 304 - - 0.803 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.709 ms {}
+GET /vite.svg 304 - - 0.418 ms {}
+GET /api/persons 304 - - 101.031 ms {}
+GET / 304 - - 0.425 ms {}
+GET /assets/index-31db45bf.js 304 - - 0.527 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.438 ms {}
+GET /vite.svg 304 - - 1.686 ms {}
+GET /api/persons 304 - - 101.248 ms {}
+GET / 304 - - 0.442 ms {}
+GET /assets/index-31db45bf.js 304 - - 0.935 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.868 ms {}
+GET /vite.svg 304 - - 0.519 ms {}
+GET /api/persons 304 - - 107.557 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.842 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 114 - 99.611 ms {"name":"Israel Matute","number":"11","id":0}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 114 - 101.177 ms {"name":"Israel Matute","number":"11","id":0}
+GET / 304 - - 5.778 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.664 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.438 ms {}
+GET /vite.svg 304 - - 0.695 ms {}
+GET /api/persons 304 - - 110.922 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 114 - 104.680 ms {"name":"Israel Matute","number":"21","id":0}
+GET /assets/index-31c6fc43.css 304 - - 0.853 ms {}
+GET / 304 - - 0.843 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.093 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.732 ms {}
+GET /vite.svg 304 - - 0.635 ms {}
+GET /api/persons 304 - - 100.549 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 113 - 98.785 ms {"name":"Israel Matute","number":"1","id":0}
+GET / 304 - - 0.725 ms {}
+GET /assets/index-31db45bf.js 304 - - 0.674 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.814 ms {}
+GET /vite.svg 304 - - 0.672 ms {}
+GET /api/persons 304 - - 133.949 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 113 - 98.743 ms {"name":"Israel Matute","number":"1","id":0}
+GET / 304 - - 0.560 ms {}
+GET /assets/index-31db45bf.js 304 - - 0.895 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.031 ms {}
+GET /vite.svg 304 - - 1.160 ms {}
+GET /api/persons 304 - - 103.270 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 113 - 98.952 ms {"name":"Israel Matute","number":"1","id":0}
+GET / 304 - - 4.802 ms {}
+GET /assets/index-31db45bf.js 304 - - 2.918 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.698 ms {}
+GET /vite.svg 304 - - 0.585 ms {}
+GET /api/persons 304 - - 1583.124 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 114 - 106.483 ms {"name":"Israel Matute","number":"22","id":0}
+GET /assets/index-31c6fc43.css 304 - - 1.168 ms {}
+GET / 304 - - 5.279 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.900 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.390 ms {}
+GET /vite.svg 304 - - 0.726 ms {}
+GET /api/persons 304 - - 111.081 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 114 - 107.873 ms {"name":"Israel Matute","number":"22","id":0}
+GET /api/persons 200 548 - 115.974 ms {}
+GET /api/persons 304 - - 101.364 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 114 - 119.858 ms {"name":"Israel Matute","number":"11","id":0}
+POST /api/persons 200 78 - 100.218 ms {"name":"Israel Matute Moncada","number":"11","id":0}
+GET /api/persons 200 548 - 99.001 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 114 - 98.692 ms {"name":"Israel Matute","number":"11","id":1}
+POST /api/persons 200 78 - 96.679 ms {"name":"Israel Matute Moncada","number":"11","id":1}
+POST /api/persons 200 63 - 99.281 ms {"name":"a","number":"1131313","id":2}
+GET /api/persons 200 548 - 99.108 ms {}
+GET /api/persons 304 - - 99.459 ms {}
+POST /api/persons 200 61 - 102.189 ms {"name":"a","number":"12121","id":0}
+GET /api/persons 200 548 - 99.242 ms {}
+GET /api/persons 304 - - 98.837 ms {}
+POST /api/persons 200 73 - 96.324 ms {"name":"Arturito","number":"1232413421","id":0}
+GET /api/persons 200 622 - 104.926 ms {}
+GET /api/persons 304 - - 98.679 ms {}
+GET /api/persons 304 - - 119.452 ms {}
+GET /api/persons 304 - - 97.662 ms {}
+POST /api/persons 200 57 - 97.209 ms {"name":"a","number":"1","id":0}
+GET /api/persons 200 622 - 97.693 ms {}
+GET /api/persons 304 - - 97.396 ms {}
+GET /api/persons 304 - - 118.400 ms {}
+GET /api/persons 304 - - 97.517 ms {}
+GET /api/persons 304 - - 105.415 ms {}
+GET /api/persons 304 - - 99.855 ms {}
+GET /api/persons 304 - - 98.849 ms {}
+GET /api/persons 304 - - 98.672 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 113 - 116.522 ms {"name":"Israel Matute","number":"1","id":0}
+POST /api/persons 200 77 - 97.461 ms {"name":"Israel Matute Moncada","number":"1","id":0}
+GET /api/persons 200 622 - 100.923 ms {}
+GET /api/persons 304 - - 108.838 ms {}
+POST /api/persons 200 70 - 97.318 ms {"name":" Israel Matute","number":"1","id":0}
+PUT /api/persons/652cc8b5bed57c4769800f5d 400 117 - 100.451 ms {"name":"Israel Matute","number":"11111","id":1}
+POST /api/persons 200 82 - 121.221 ms {"name":"Israel Matute Moncada XD","number":"111","id":1}
+POST /api/persons 200 65 - 96.886 ms {"name":"ssssssss","number":"11","id":2}
+GET /api/persons 200 622 - 98.734 ms {}
+GET /api/persons 304 - - 97.818 ms {}
+GET /api/persons 304 - - 98.847 ms {}
+GET /api/persons 304 - - 99.618 ms {}
+GET /api/persons 200 622 - 105.709 ms {}
+GET /api/persons 304 - - 97.396 ms {}
+GET /api/persons 200 622 - 97.464 ms {}
+GET /api/persons 304 - - 107.916 ms {}
+GET /api/persons 200 622 - 99.558 ms {}
+GET /api/persons 304 - - 97.879 ms {}
+GET /api/persons 200 622 - 97.621 ms {}
+GET /api/persons 304 - - 97.139 ms {}
+GET /api/persons 304 - - 99.289 ms {}
+GET /api/persons 304 - - 97.780 ms {}
+DELETE /api/persons/652cd94af3821d5024794baa 204 - - 0.634 ms {}
+POST /api/persons 200 57 - 97.787 ms {"name":"a","number":"1","id":-1}
+GET /api/persons 200 548 - 97.357 ms {}
+GET /api/persons 304 - - 100.689 ms {}
+GET /api/persons 304 - - 97.861 ms {}
+DELETE /api/persons/652cc8b5bed57c4769800f5d 204 - - 0.262 ms {}
+GET /api/persons 200 472 - 128.870 ms {}
+GET /api/persons 304 - - 117.706 ms {}
+POST /api/persons 200 70 - 98.863 ms {"name":"Israel Matute","number":"12","id":0}
+GET /api/persons 200 472 - 97.235 ms {}
+GET /api/persons 304 - - 97.587 ms {}
+GET /api/persons 304 - - 96.997 ms {}
+GET /api/persons 304 - - 104.839 ms {}
+GET /api/persons 304 - - 98.417 ms {}
+POST /api/persons 200 69 - 96.234 ms {"name":"Israel Matute","number":"1","id":0}
+GET /api/persons 200 472 - 97.997 ms {}
+GET /api/persons 304 - - 96.453 ms {}
+GET /api/persons 304 - - 100.412 ms {}
+GET /api/persons 304 - - 99.067 ms {}
+POST /api/persons 200 57 - 97.735 ms {"name":"a","number":"1","id":0}
+GET /api/persons 200 472 - 98.542 ms {}
+GET /api/persons 304 - - 98.211 ms {}
+POST /api/persons 200 57 - 97.126 ms {"name":"a","number":"1","id":0}
+GET /api/persons 200 472 - 112.188 ms {}
+GET /api/persons 304 - - 102.089 ms {}
+POST /api/persons 200 57 - 110.920 ms {"name":"a","number":"1","id":0}
+GET /api/persons 200 472 - 101.911 ms {}
+GET /api/persons 304 - - 100.412 ms {}
+GET /api/persons 304 - - 122.414 ms {}
+GET /api/persons 304 - - 101.296 ms {}
+POST /api/persons 200 57 - 101.958 ms {"name":"a","number":"1","id":0}
+POST /api/persons 200 57 - 112.134 ms {"name":"q","number":"1","id":1}
+POST /api/persons 200 57 - 109.167 ms {"name":"z","number":"1","id":2}
+GET /api/persons 200 472 - 106.956 ms {}
+GET /api/persons 304 - - 114.340 ms {}
+POST /api/persons 200 57 - 98.129 ms {"name":"a","number":"1","id":0}
+PUT /api/persons/652cdd677ff11c1b9030da6e 200 66 - 108.121 ms {"name":"a","number":"1","id":1}
+GET /api/persons 200 472 - 107.820 ms {}
+GET /api/persons 304 - - 99.591 ms {}
+POST /api/persons 200 57 - 103.089 ms {"name":"a","number":"1","id":0}
+POST /api/persons 200 75 - 110.941 ms {"name":"Israel Matute","number":"1231321","id":1}
+GET /api/persons 200 472 - 109.402 ms {}
+GET /api/persons 304 - - 142.110 ms {}
+GET /api/persons 304 - - 100.253 ms {}
+GET /api/persons 304 - - 112.297 ms {}
+POST /api/persons 200 83 - 96.939 ms {"name":"Israel Matute","number":"111111111111111","id":0}
+GET /api/persons 200 556 - 104.677 ms {}
+GET /api/persons 304 - - 96.595 ms {}
+PUT /api/persons/652cde164c8dc5e55bde85bb 400 113 - 101.490 ms {"name":"Israel Matute","number":"1","id":0}
+GET /api/persons 304 - - 1057.788 ms {}
+GET /api/persons 304 - - 98.636 ms {}
+PUT /api/persons/652cde164c8dc5e55bde85bb 400 113 - 106.724 ms {"name":"Israel Matute","number":"1","id":0}
+POST /api/persons 200 77 - 97.226 ms {"name":"Israel Matute Moncada","number":"1","id":0}
+GET /api/persons 200 556 - 101.032 ms {}
+GET /api/persons 304 - - 97.473 ms {}
+GET /api/persons 304 - - 110.919 ms {}
+GET /api/persons 304 - - 97.801 ms {}
+POST /api/persons 200 57 - 101.770 ms {"name":"a","number":"1","id":0}
+GET /api/persons 200 556 - 101.057 ms {}
+GET /api/persons 304 - - 98.799 ms {}
+POST /api/persons 200 69 - 96.508 ms {"name":"a","number":"8273412111112"}
+GET /api/persons 304 - - 103.876 ms {}
+GET /api/persons 304 - - 98.257 ms {}
+POST /api/persons 200 69 - 111.646 ms {"name":"a","number":"8273412111112"}
+POST /api/persons 200 69 - 99.632 ms {"name":"a","number":"8273412111112"}
+POST /api/persons 200 57 - 97.504 ms {"name":"a","number":"8"}
+POST /api/persons 200 57 - 98.164 ms {"name":"a","number":"8"}
+POST /api/persons 200 57 - 98.854 ms {"name":"a","number":"8"}
+POST /api/persons 200 57 - 97.080 ms {"name":"a","number":"8"}
+POST /api/persons 200 57 - 97.772 ms {"name":"a","number":"8"}
+PUT /api/persons/6528f6a97124f0d1264ef743 400 113 - 101.219 ms {"number":"8"}
+PUT /api/persons/6528f6a97124f0d1264ef743 400 113 - 115.572 ms {"number":"8"}
+PUT /api/persons/6528f6a97124f0d1264ef743 400 113 - 99.885 ms {"number":"8"}
+PUT /api/persons/6528f6a97124f0d1264ef743 400 113 - 99.504 ms {"number":"8"}
+PUT /api/persons/6528f6a97124f0d1264ef743 400 113 - 99.455 ms {"number":"8"}
+POST /api/persons 200 57 - 99.672 ms {"name":"x","number":"8"}
+PUT /api/notes/652cc37a9b56d3aedb5f676f 404 28 - 2.354 ms {"content":"Gano Noboa","Imporant":false}
+PUT /api/notes/652cc37a9b56d3aedb5f676f 404 28 - 0.476 ms {"content":"Gano Noboa","Imporant":false}
+PUT /api/persons/6528f6a97124f0d1264ef743 400 113 - 128.756 ms {"number":"8"}
+POST /api/persons 200 57 - 100.912 ms {"name":"x","number":"8"}
+POST /api/persons 200 57 - 98.534 ms {"name":"x","number":"8"}
+POST /api/persons 200 57 - 98.600 ms {"name":"x","number":"8"}
+PUT /api/persons/6528f6a97124f0d1264ef743 400 113 - 128.174 ms {"number":"8"}
+PUT /api/persons/6528f6a97124f0d1264ef743 400 113 - 112.796 ms {"number":"8"}
+PUT /api/persons/6528f6a97124f0d1264ef743 400 114 - 113.239 ms {"number":"81"}
+POST /api/persons 200 57 - 97.573 ms {"name":"x","number":"8"}
+POST /api/persons 200 57 - 101.244 ms {"name":"x","number":"8"}
+POST /api/persons 200 57 - 98.131 ms {"name":"x","number":"8"}
+POST /api/persons 200 57 - 644.481 ms {"name":"x","number":"8"}
+POST /api/persons 200 57 - 99.910 ms {"name":"x","number":"8"}
+POST /api/persons 200 57 - 111.524 ms {"name":"x","number":"8"}
+POST /api/persons 200 57 - 111.549 ms {"name":"x","number":"8"}
+POST /api/persons 400 63 - 113.582 ms {"name":"Karl Marx","number":"8"}
+POST /api/persons 400 63 - 100.619 ms {"name":"Karl Marx","number":"8"}
+POST /api/persons 400 41 - 9.183 ms {"name":"","number":"8"}
+POST /api/persons 200 57 - 107.847 ms {"name":"a","number":"8"}
+POST /api/persons 400 186 - 706.541 ms {"name":"a","number":"8"}
+GET /api/persons 304 - - 114.474 ms {}
+GET /api/persons 304 - - 99.733 ms {}
+POST /api/persons 400 186 - 120.593 ms {"name":"a","number":"1","id":0}
+POST /api/persons 400 113 - 112.925 ms {"name":"abasdsafd","number":"1","id":0}
+POST /api/persons 200 77 - 200.343 ms {"name":"abasdsafd","number":"1111111111111","id":0}
+GET /api/persons 200 634 - 104.084 ms {}
+GET /api/persons 304 - - 101.339 ms {}
+DELETE /api/persons/652ce42b141eb3746942d384 204 - - 0.489 ms {}
+PUT /api/persons/652cde164c8dc5e55bde85bb 400 113 - 108.594 ms {"name":"Israel Matute","number":"1","id":-1}
+POST /api/persons 400 117 - 107.849 ms {"name":"Israel Matutea","number":"11111","id":-1}
+POST /api/persons 200 80 - 197.828 ms {"name":"Israel Matutea","number":"11111111111","id":-1}
+GET /api/persons 200 637 - 100.783 ms {}
+GET /api/persons 304 - - 97.957 ms {}
+DELETE /api/persons/652ce447141eb3746942d38d 204 - - 0.289 ms {}
+DELETE /api/persons/652cd1ef448b1d1b0f07efc2 204 - - 0.213 ms {}
+POST /api/persons 400 186 - 144.886 ms {"name":"a","number":"8"}
+POST /api/persons 400 186 - 114.226 ms {"name":"a","number":"8"}
+POST /api/persons 400 186 - 117.851 ms {"name":"a","number":"8"}
+POST /api/persons 400 187 - 114.183 ms {"name":"ab","number":"8"}
+GET /api/persons 200 476 - 117.072 ms {}
+GET / 200 452 - 5.631 ms {}
+GET /assets/index-31c6fc43.css 200 210 - 2.934 ms {}
+GET /assets/index-83040b89.js 200 175992 - 2.163 ms {}
+GET /api/persons 304 - - 101.770 ms {}
+DELETE /api/persons/652cde164c8dc5e55bde85bb 204 - - 1.299 ms {}
+GET / 304 - - 1.013 ms {}
+GET /assets/index-83040b89.js 304 - - 1.274 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.018 ms {}
+GET /vite.svg 200 1497 - 3.025 ms {}
+GET /api/persons 200 392 - 99.493 ms {}
+GET / 304 - - 0.731 ms {}
+GET /assets/index-83040b89.js 304 - - 0.787 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.507 ms {}
+GET /vite.svg 304 - - 0.483 ms {}
+GET /api/persons 304 - - 99.989 ms {}
