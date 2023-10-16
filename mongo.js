@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
-const [, , password = "", name = "", number = ""] = process.argv
+const [, , password = '', name = '', number = ''] = process.argv
 
-if (password === "") {
-    console.log("You should type your password")
+if (password === '') {
+    console.log('You should type your password')
     process.exit(1)
 }
 
@@ -18,23 +18,23 @@ const personSchema = new mongoose.Schema({
 
 const Person = mongoose.model('Person', personSchema)
 
-if (name === "" || number === "") {
+if (name === '' || number === '') {
     mongoose.connect(url).catch(error => {
-        console.log("Error connecting to db / Bad Password")
+        console.log('Error connecting to db / Bad Password: ' + error)
         process.exit(1)
     })
     Person.find({}).then(result => {
-        console.log("phonebook:")
+        console.log('phonebook: ')
         result.forEach(person => {
-            console.log(person.name + " " + person.number)
+            console.log(person.name + ' ' + person.number)
         })
         mongoose.connection.close()
-    }).catch(error => console.log("Error retreiving Persons: " + error))
+    }).catch(error => console.log('Error retreiving Persons: ' + error))
 
 } else {
 
     mongoose.connect(url).catch(error => {
-        console.log("Error connecting to db / Bad Password")
+        console.log('Error connecting to db / Bad Password: ' + error)
         process.exit(1)
     })
 
@@ -44,8 +44,8 @@ if (name === "" || number === "") {
     })
 
     person.save().then(() => {
-        console.log('added ' + name + " number " + number + " to phonebook")
+        console.log('added ' + name + ' number ' + number + ' to phonebook')
         mongoose.connection.close()
-    }).catch((error) => console.log("Error in saving new Person: " + error))
+    }).catch((error) => console.log('Error in saving new Person: ' + error))
 
 }

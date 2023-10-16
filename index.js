@@ -9,25 +9,25 @@ const Person = require('./models/person')
 app.use(express.json())
 
 app.use((req, res, next) => {
-    req.reqBody = JSON.stringify(req.body);
-    next();
-});
+    req.reqBody = JSON.stringify(req.body)
+    next()
+})
 //write stream
 let accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
 
-morgan.token('reqBody', (req) => req.reqBody);
+morgan.token('reqBody', (req) => req.reqBody)
 
-app.use(morgan(':method :url :status :res[content-length] - :response-time ms :reqBody', { stream: accessLogStream }));
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms :reqBody', { stream: accessLogStream }))
 
 const cors = require('cors')
 app.use(cors())
 app.use(express.static('dist'))
 
-port = process.env.PORT || 3001
+const port = process.env.PORT || 3001
 
 
 const errorHandler = (error, request, response, next) => {
-    console.error("Error en errorHandler:", error);
+    console.error('Error en errorHandler:', error)
     console.error(error.message)
 
     if (error.name === 'CastError') {
@@ -58,9 +58,9 @@ app.get('/info', (req, res) => {
             res.send(info)
         })
         .catch(error => {
-            console.log("Error counting documents: " + error)
+            console.log('Error counting documents: ' + error)
             res.send({
-                msg: "Error counting Documents",
+                msg: 'Error counting Documents',
                 error
             })
         })
@@ -70,7 +70,7 @@ app.get('/info', (req, res) => {
 app.get('/api/persons', (req, res) => {
     Person.find({})
         .then(persons => res.send(persons))
-        .catch(error => console.log("Error retreiving persons data"))
+        .catch((error) => console.log('Error retreiving persons data:' + error))
 })
 
 app.get('/api/persons/:id', (req, res, next) => {
@@ -94,22 +94,22 @@ app.delete('/api/persons/:id', (req, res, next) => {
 
 app.post('/api/persons', (req, res, next) => {
 
-    reqBody = JSON.stringify(req.body)
+    JSON.stringify(req.body)
 
     let { name, number } = req.body
 
     if (name === '' || number === '') {
-        const error = new Error("The name or number is missing");
-        error.name = "ValidationError";
-        return next(error);
+        const error = new Error('The name or number is missing')
+        error.name = 'ValidationError'
+        return next(error)
     }
 
     Person.findOne({ name: name })
         .then((person) => {
             if (person) {
-                const error = new Error("The name already exists in the phonebook: " + person.name);
-                error.name = "ValidationError";
-                return next(error);
+                const error = new Error('The name already exists in the phonebook: ' + person.name)
+                error.name = 'ValidationError'
+                return next(error)
             } else {
                 const person = new Person({
                     name: name,
@@ -118,9 +118,9 @@ app.post('/api/persons', (req, res, next) => {
 
                 person.save()
                     .then(() => {
-                        res.send(person);
+                        res.send(person)
                     })
-                    .catch(error => next(error));
+                    .catch(error => next(error))
             }
         })
         .catch(error => next(error))
@@ -134,9 +134,10 @@ app.put('/api/persons/:id', (req, res, next) => {
         .then(person => {
             if (!person) {
                 res.send({
-                    msg: "Error: Not person found with id " + id
+                    msg: 'Error: Not person found with id ' + id
                 })
             }
+            person.name = name
             person.number = number
             person.save()
                 .then(() => res.send(person))
@@ -153,6 +154,6 @@ app.use(unknownEndpoint)
 app.use(errorHandler)
 
 app.listen(port, () => {
-    console.log("Running in Port: " + port)
+    console.log('Running in Port: ' + port)
 })
 

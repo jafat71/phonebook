@@ -645,3 +645,28 @@ POST /api/persons 400 113 - 109.073 ms {"name":"Israel Matute","number":"122-14-
 POST /api/persons 200 80 - 206.579 ms {"name":"Israel Matute","number":"122-14113531","id":0}
 GET /api/persons 200 548 - 101.364 ms {}
 GET /api/persons 304 - - 98.768 ms {}
+POST /api/persons 200 74 - 233.134 ms {"name":"Adam Smith","number":"111-11111"}
+POST /api/persons 400 64 - 110.763 ms {"name":"Adam Smith","number":"111-11121"}
+PUT /api/persons 404 28 - 0.344 ms {"name":"Adam Smith","number":"111-11121"}
+PUT /api/persons/652cf24ca745cf266cfeb8ff 200 74 - 204.849 ms {"name":"Adam Smith","number":"111-11121"}
+GET / 200 452 - 6.456 ms {}
+GET /assets/index-31c6fc43.css 200 210 - 2.093 ms {}
+GET /assets/index-cc7fcd6d.js 200 175990 - 4.011 ms {}
+GET /vite.svg 200 1497 - 1.200 ms {}
+GET /api/persons 200 469 - 118.918 ms {}
+GET / 304 - - 2.185 ms {}
+GET /assets/index-cc7fcd6d.js 304 - - 1.944 ms {}
+GET /assets/index-31c6fc43.css 304 - - 0.479 ms {}
+GET /vite.svg 304 - - 0.499 ms {}
+GET /api/persons 304 - - 101.258 ms {}
+DELETE /api/persons/652ce91ac637560d59dd52fe 204 - - 0.888 ms {}
+GET / 304 - - 1.048 ms {}
+GET /assets/index-cc7fcd6d.js 304 - - 1.240 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.166 ms {}
+GET /vite.svg 304 - - 0.588 ms {}
+GET /api/persons 200 394 - 97.392 ms {}
+POST /api/persons 400 113 - 114.033 ms {"name":"Israel Matute","number":"1","id":0}
+POST /api/persons 200 78 - 197.420 ms {"name":"Israel Matute","number":"11-1111111","id":0}
+PUT /api/persons/652cf2b8de7a50865196790e 400 118 - 111.061 ms {"name":"Israel Matute","number":"222222","id":1}
+PUT /api/persons/652cf2b8de7a50865196790e 200 77 - 198.219 ms {"name":"Israel Matute","number":"222-22222","id":1}
+DELETE /api/persons/652cf2b8de7a50865196790e 204 - - 0.240 ms {}
