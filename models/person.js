@@ -17,8 +17,15 @@ const personSchema = new mongoose.Schema({
     },
     number: {
         type: String,
-        minLength: 9,
-        required: true
+        minLength: 8,
+        required: true,
+        validate: {
+            validator: (value)=>{
+                const phoneRegex = /^\d{2,3}-\d+$/;
+                return phoneRegex.test(value);
+            },
+            message: "Phone Number not formatted correctly (min. 8 digits separated by -)"
+        }
     },
 })
 

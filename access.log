@@ -626,3 +626,22 @@ GET /assets/index-83040b89.js 304 - - 0.787 ms {}
 GET /assets/index-31c6fc43.css 304 - - 0.507 ms {}
 GET /vite.svg 304 - - 0.483 ms {}
 GET /api/persons 304 - - 99.989 ms {}
+GET /api/persons 200 392 - 1226.717 ms {}
+GET /api/persons 304 - - 99.506 ms {}
+POST /api/persons 400 187 - 133.394 ms {"name":"ab","number":"8"}
+POST /api/persons 400 113 - 108.541 ms {"name":"Adam SMith","number":"8"}
+POST /api/persons 400 108 - 109.006 ms {"name":"Adam SMith","number":"8asdsadasd"}
+POST /api/persons 400 108 - 110.424 ms {"name":"Adam SMith","number":"11111111"}
+POST /api/persons 400 113 - 959.571 ms {"name":"Adam SMith","number":"11111111"}
+POST /api/persons 200 74 - 202.645 ms {"name":"Adam SMith","number":"111-11111"}
+GET /api/persons 200 467 - 126.282 ms {}
+GET /api/persons 304 - - 100.665 ms {}
+GET /api/persons 304 - - 98.330 ms {}
+GET /api/persons 304 - - 99.705 ms {}
+GET /api/persons 304 - - 99.712 ms {}
+POST /api/persons 400 114 - 115.973 ms {"name":"Israel Matute","number":"12","id":0}
+POST /api/persons 400 113 - 110.544 ms {"name":"Israel Matute","number":"12214113531","id":0}
+POST /api/persons 400 113 - 109.073 ms {"name":"Israel Matute","number":"122-14-113531","id":0}
+POST /api/persons 200 80 - 206.579 ms {"name":"Israel Matute","number":"122-14113531","id":0}
+GET /api/persons 200 548 - 101.364 ms {}
+GET /api/persons 304 - - 98.768 ms {}
