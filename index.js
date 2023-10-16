@@ -59,26 +59,25 @@ app.get('/api/persons', (req, res) => {
         .catch(error => console.log("Error retreiving persons data"))
 })
 
-app.get('/api/persons/:id', (req, res) => {
+app.get('/api/persons/:id', (req, res, next) => {
     let id = req.params.id
     Person.findById(id)
         .then(person => {
             person
                 ? res.send(person)
-                : res.send('<h1>ERROR 404: person with id ' + id + ' not found.</h1>')
+                : res.status(404).send('<h1>ERROR 404: person with id ' + id + ' not found.</h1>')
         })
-        .catch(error => console.log("Error retreiving person with id: " + id + " data"))
-
+        .catch(error => next(error))
 })
 
-app.delete('/api/persons/:id', (req, res) => {
+app.delete('/api/persons/:id', (req, res, next) => {
     let id = req.params.id
     Person.findByIdAndDelete(id)
         .then(res.status(204).send())
-        .catch(error => console.log("Error deleting person with id: " + id + " data"))
+        .catch(error => next(error))
 })
 
-app.post('/api/persons', (req, res) => {
+app.post('/api/persons', (req, res, next) => {
     reqBody = JSON.stringify(req.body)
 
     let { name, number } = req.body
@@ -106,25 +105,45 @@ app.post('/api/persons', (req, res) => {
                     .catch(error => console.log("Error saving new Person: " + error))
             }
         })
+        .catch(error => next(error))
 })
 
-app.put('/api/persons/:id',(req,res)=>{
-    let id = req.params.id 
+app.put('/api/persons/:id', (req, res, next) => {
+    let id = req.params.id
     let { name, number } = req.body
     Person.findById(id)
-        .then(person=>{
-            if(!person){
+        .then(person => {
+            if (!person) {
                 res.send({
                     msg: "Error: Not person found with id " + id
                 })
             }
             person.number = number
             person.save()
-                .then(()=>res.send(person))
-                .catch(error=>console.log("Error updating person info: " + error))
+                .then(() => res.send(person))
+                .catch(error => console.log("Error updating person info: " + error))
         })
-        .catch(error=>console.log("Error finding person with id " + id + " : " + error ))
+        .catch(error => next(error))
 })
+
+const unknownEndpoint = (request, response) => {
+    response.status(404).send({ error: 'unknown endpoint' })
+}
+
+app.use(unknownEndpoint)
+
+const errorHandler = (error, request, response, next) => {
+    console.error(error.message)
+
+    if (error.name === 'CastError') {
+        return response.status(400).send({ error: 'malformatted id' })
+    }
+
+    response.status(500).send({ error: 'Something went wrong' });
+
+}
+
+app.use(errorHandler)
 
 app.listen(port, () => {
     console.log("Running in Port: " + port)

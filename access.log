@@ -291,3 +291,52 @@ POST /api/persons 200 74 - 100.269 ms {"name":"Artur Conan","number":"21412523",
 PUT /api/persons/652b910e9471f646679b818c 200 73 - 207.354 ms {"name":"Israel Matute","number":"34324","id":2}
 PUT /api/persons/652b9784ddcb97bfe700ee99 200 79 - 198.880 ms {"name":"Artur Conan","number":"3423423252777","id":2}
 DELETE /api/persons/652b976bddcb97bfe700ee96 204 - - 0.701 ms {}
+GET /api/persons 200 468 - 1394.857 ms {}
+GET /favicon.ico 404 150 - 4.585 ms {}
+GET /api/persons/6528f6a97124f0d1264ef743xs - - - - ms {"number":"82734122"}
+GET /api/persons/6528f6a97124f0d1264ef7 - - - - ms {"number":"82734122"}
+GET /api/persons/652b8e08712afa3fd3dfb867 200 76 - 113.437 ms {"number":"82734122"}
+GET /api/persons/652b8e08712afa3fd3dfb86X - - - - ms {"number":"82734122"}
+GET /api/persons 200 468 - 110.551 ms {}
+GET /api/persons 304 - - 104.621 ms {}
+GET /api/persons/652b8e08712afa3fd3dfb86X 500 1364 - 3.993 ms {"number":"82734122"}
+GET /api/persons/6528f3310840a50068f5bc2d 200 81 - 101.424 ms {"number":"82734122"}
+GET /api/persons/6528f3310840a50068f5bc2x 500 1364 - 2.858 ms {"number":"82734122"}
+GET /api/persons/6528f3310840a50068f5bc2x 400 27 - 9.828 ms {"number":"82734122"}
+GET /api/persons/6528f3310840a50068f5bc2xadada 400 27 - 2.220 ms {"number":"82734122"}
+GET /api/persons/652b8e08712afa3fd3dfb86 400 27 - 1.892 ms {"number":"82734122"}
+GET /api/persons/652b8e08712afa3fd3dfb867 200 76 - 109.441 ms {"number":"82734122"}
+GET / 304 - - 9.930 ms {}
+GET /assets/index-31c6fc43.css 304 - - 4.086 ms {}
+GET /assets/index-31db45bf.js 304 - - 2.192 ms {}
+GET /api/persons 304 - - 113.329 ms {}
+PUT /api/persons/652b910e9471f646679b818c 200 75 - 222.724 ms {"name":"Israel Matute","number":"1111111","id":0}
+DELETE /api/persons/652b910e9471f646679b818c 204 - - 0.646 ms {}
+POST /api/persons 200 70 - 99.942 ms {"name":"Israel Matute","number":"12","id":-1}
+PUT /api/persons/652cc8b5bed57c4769800f5d 200 71 - 198.806 ms {"name":"Israel Matute","number":"121","id":0}
+PUT /api/persons/652b8e08712afa3fd3dfb867xazxa 400 27 - 3.020 ms {"number":"82734122"}
+PUT /api/persons/652b8e08712afa3fd3dfb867 200 75 - 208.775 ms {"number":"8273a4122"}
+PUT /api/persons/652b8e08712afa3fd3dfb867 200 74 - 206.602 ms {"number":"82734122"}
+PUT /api/persons/652b910e9471f646679b818c 200 66 - 99.490 ms {"name":"Josafat Matute Moncada","number":"82734122"}
+PUT /api/persons/652b910e9471f646679b818c 200 66 - 97.563 ms {"name":"Josafat Matute Moncada","number":"82734122"}
+GET /api/persons 200 464 - 111.172 ms {}
+GET /api/persons/652b910e9471f646679b818c 404 70 - 98.010 ms {}
+GET /api/persons/6528f3310840a50068f5bc2d 200 81 - 98.323 ms {}
+GET /api/persons/652cc8b5bed57c4769800f5d 200 71 - 96.933 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 200 76 - 205.559 ms {"name":"Josafat Matute Moncada","number":"82734122"}
+GET /api/persons/652cc8b5bed57c4769800f5d 200 76 - 98.346 ms {}
+GET /api/persons/652cc8b5bed57c4769800f5d 304 - - 100.413 ms {}
+GET /api/persons/652cc8b5bed57c4769800f5d 304 - - 97.539 ms {}
+GET /api/persons/652cc8b5bed57c4769800f5d 304 - - 122.250 ms {}
+GET /api/persons/652cc8b5bed57c4769800f5d 304 - - 96.651 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 200 76 - 202.449 ms {"name":"Josafat Matute Moncada","number":"82734122"}
+PUT /api/persons/652cc8b5bed57c4769800f5d 200 76 - 212.534 ms {"name":"Josafat Matute Moncada","number":"82734122"}
+PUT /api/persons/652cc8b5bed57c4769800f5d 200 81 - 285.389 ms {"number":"8273412111112"}
+GET /api/persons/652cc8b5bed57c4769800f5d 200 81 - 110.059 ms {}
+GET / 304 - - 1.469 ms {}
+GET /assets/index-31db45bf.js 304 - - 1.693 ms {}
+GET /assets/index-31c6fc43.css 304 - - 1.090 ms {}
+GET /vite.svg 304 - - 0.887 ms {}
+GET /api/persons 200 474 - 101.933 ms {}
+PUT /api/persons/652cc8b5bed57c4769800f5d 200 75 - 211.057 ms {"name":"Israel Matute","number":"1111111","id":0}
+PUT /api/persons/6528f6a97124f0d1264ef743 200 72 - 200.087 ms {"name":"Karl Marx","number":"22222222","id":0}
